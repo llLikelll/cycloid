@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Циклоида</title>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<body>
+    <div class="row" height="100%">
+        <div class="col-1" id="canvas-container">
+            <canvas id="layer1" style="z-index: 1"></canvas>
+            <canvas id="layer2" style="z-index: 0"></canvas>
+        </div>
+        <div id="options" class="col-2" >
+            <div class="mb-10">
+                <div class="mb-10">Радиус колеса</div>
+                <div class="slidecontainer">
+                    <input type="range" class="cus-slider" id="myRange">
+                </div>
+            </div>
+            <div class="mb-10">
+                <div class="mb-10">Скорость вращения колеса</div>
+                <div class="slidecontainer">
+                    <input type="range" class="cus-slider" id="rangeSpeed">
+                </div>
+            </div>
+            <div class="mb-10">
+                <span>X = </span>
+                <span id="outputCoordinateX">0</span>
+            </div>
+            <div>
+                <span>Y = </span>
+                <span id="outputCoordinateY">0</span>
+            </div>
+        </div>
+    </div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
